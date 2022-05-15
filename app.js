@@ -103,7 +103,6 @@ glove.addEventListener('click', () => {
         handleAnswer(objCheck.name, objCheck.avengers,false)
     } 
 
-    let needCleanup = false
     endGameData.forEach((item) => {
 
         const avengersArr = objCheck.avengers
@@ -114,7 +113,6 @@ glove.addEventListener('click', () => {
         itemsArr.sort()
 
         if(avengersArr.length !== itemsArr.length){
-            needCleanup = true
             //handleAnswer(objCheck.name, avengersArr, false)
             return
         } 
